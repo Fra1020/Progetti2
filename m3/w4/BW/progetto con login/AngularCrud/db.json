@@ -1,12 +1,5 @@
 {
-  "filmList": [
-    {
-      "filmName": "Consequuntur digniss",
-      "category": "Horror",
-      "description": "Magni illum hic rem",
-      "id": 1
-    }
-  ],
+  "filmList": [],
   "comments": [
     {
       "id": 1,
@@ -16,5 +9,19 @@
   ],
   "profile": {
     "name": "typicode"
-  }
+  },
+  "users": [
+    {
+      "email": "c@c.it",
+      "password": "$2a$10$3GKWxG7wQcYwZsijGTa8feGJfxHk6NqlNVzaWb18QiLxzF/putqui",
+      "name": "sdd",
+      "id": 1
+    },
+    {
+      "email": "c@casd.it",
+      "password": "$2a$10$00NZublzW3HZc4mTdDquL.L1qhpLwxi0Mb6xWe2yZn7M7bNO/FpZ2",
+      "name": "sddweew",
+      "id": 2
+    }
+  ]
 }

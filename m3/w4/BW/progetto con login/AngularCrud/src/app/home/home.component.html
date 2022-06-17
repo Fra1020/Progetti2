@@ -1,14 +1,14 @@
 <h1>Login</h1>
 <form class="form-control" #f="ngForm" (ngSubmit)="login(f)">
   <input ngModel required type="email" name="email" placeholder="Email">
-  <input ngModel required type="password" name="pass" placeholder="Password">
+  <input ngModel required type="password" name="password" placeholder="Password">
   <button type="submit">Login</button>
 </form>
 <hr>
 <h1>registrati<h1>
-<form class="form-control" #fo="ngForm" (ngSubmit)="signup(fo)">
+<form class="form-control" #f1="ngForm" (ngSubmit)="signup(f1)">
   <input ngModel required type="email" name="email" placeholder="Email">
-  <input ngModel required type="text" name="nome" placeholder="Nome">
-  <input ngModel required type="password" name="pass" placeholder="Password">
+  <input ngModel required type="text" name="name" placeholder="Nome">
+  <input ngModel required type="password" name="password" placeholder="Password">
   <button type="submit">Login</button>
 </form>

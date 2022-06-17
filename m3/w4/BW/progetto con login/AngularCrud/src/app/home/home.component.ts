@@ -18,7 +18,7 @@ export class HomeComponent implements OnInit {
   login(f:NgForm) {
     this.authSrv.login(f.value).subscribe((res)=>{
       console.log(res);
-      this.router.navigate(['/users']);
+      this.router.navigate(['/listafilm']);
     })
 
   }
@@ -26,9 +26,9 @@ export class HomeComponent implements OnInit {
   signup(f:NgForm){
     this.authSrv.signup(f.value).subscribe((res)=>{
       console.log(res);
-      this.router.navigate(['/users']);
+      this.router.navigate(['/listafilm']);
     })
-    
+
   }
 
 }

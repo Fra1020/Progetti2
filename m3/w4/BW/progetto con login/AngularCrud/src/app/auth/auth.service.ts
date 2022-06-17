@@ -46,6 +46,8 @@ export class AuthService {
   }
 
   signup(data:{email:string; password:string; name:string}) {
+    console.log("Signup", data);
+
     return this.http.post<AuthData>(this.apiUrl+"register", data).pipe(
       tap((data)=>{
         console.log("Signup", data);
@@ -78,7 +80,7 @@ export class AuthService {
       this.logout()
       return
     }
-    
+
     this.loggedUser.next(user)
     this.autoLogout(user.accessToken)
   }
