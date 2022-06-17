@@ -1,0 +1,32 @@
+<h1 mat-dialog-title>Form di aggiunta dei film </h1>
+<div mat-dialog-content>
+    <form [formGroup]="filmForm">
+        <mat-form-field appearance="outline">
+            <mat-label>Titolo del film</mat-label>
+            <input formControlName="filmName" matInput placeholder="Titolo">
+            <mat-icon matSuffix>movie</mat-icon>
+            <mat-hint>Inserisci il titolo del film</mat-hint>
+          </mat-form-field>
+          <mat-form-field appearance="outline">
+                <mat-select formControlName="category" placeholder="Seleziona categoria">
+                    <mat-option value="Azione">Azione</mat-option>
+                    <mat-option value="Animazione">Animazione</mat-option>
+                    <mat-option value="Horror">Horror</mat-option>
+                    <mat-option value="Commedia">Commedia</mat-option>
+                    <mat-option value="Fantascienza">Fantascienza</mat-option>
+                    <mat-option value="Poliziesco">Poliziesco</mat-option>
+                </mat-select>
+                <mat-hint>Elenco Categorie</mat-hint>
+            </mat-form-field>
+          <mat-form-field appearance="outline">
+            <mat-label>Descrizione del film</mat-label>
+            <input formControlName="description" matInput placeholder="Descrizione">
+            <mat-icon matSuffix>description</mat-icon>
+            <mat-hint>Inserisci la descrizione del film</mat-hint>
+        </mat-form-field>
+    </form>
+</div>
+<div mat-dialog-action [align]="'end'">
+    <button mat-raised-button color="warn" mat-dialog-close>Close</button>
+    <button style="margin-left: 8px;" mat-raised-button color="primary" (click)="addFilm()">{{actionBtn}}</button>
+</div>
